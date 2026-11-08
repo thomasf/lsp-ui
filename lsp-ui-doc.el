@@ -188,6 +188,11 @@ Only the `background' is used in this face."
   "Face used on links."
   :group 'lsp-ui-doc)
 
+(defface lsp-ui-doc-separator
+  '((t :background "dark grey"))
+  "Face used on horizontal separators (<hr>)."
+  :group 'lsp-ui-doc)
+
 (defvar lsp-ui-doc-frame-parameters
   '((left                     . -1)
     (no-focus-on-map          . t)
@@ -721,7 +726,7 @@ FN is the function to call on click."
                       ;; :align-to is added with lsp-ui-doc--fix-hr-props
                       'display '(space :height (1))
                       'lsp-ui-doc--replace-hr t
-                      'face '(:background "dark grey"))
+                      'face 'lsp-ui-doc-separator)
           ;; :align-to is added here too
           (propertize " " 'display '(space :height (1)))
           (and (not (equal after ?\n)) (propertize " \n" 'face '(:height 0.2)))))))))

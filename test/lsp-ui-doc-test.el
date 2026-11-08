@@ -48,10 +48,10 @@ Text
 
    
 After"
-                 8 9 (display (space :height (1)) lsp-ui-doc--replace-hr t face (:background "dark grey"))
+                 8 9 (display (space :height (1)) lsp-ui-doc--replace-hr t face lsp-ui-doc-separator)
                  9 10 (display (space :height (1)))
                  10 12 (face (:height 0.2))
-                 18 19 (display (space :height (1)) lsp-ui-doc--replace-hr t face (:background "dark grey"))
+                 18 19 (display (space :height (1)) lsp-ui-doc--replace-hr t face lsp-ui-doc-separator)
                  19 20 (display (space :height (1)))
                  20 22 (face (:height 0.2)))
                (buffer-substring (point-min) (point-max)))))))
